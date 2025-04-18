@@ -66,8 +66,8 @@ rym_auth <-
     temp_code <- readline(prompt = "Enter authorize code:")
 
     # check code
-    while (nchar(temp_code) != 7) {
-      message("The verification code you entered is not a 7-digit code, please try entering the code again.")
+    while (nchar(temp_code) != 16) {
+      message("The verification code you entered is not a 16-symbol code, please try entering the code again.")
       temp_code <- readline(prompt = "Enter authorize code:")
     }
 
